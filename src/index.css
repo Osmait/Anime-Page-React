@@ -1,0 +1,140 @@
+:root {
+  --primario: #6834a6;
+  --blanco: #fff;
+  --negro: #000000;
+  --fuentePrincipal: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  margin: 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* headers */
+
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.nav__links{
+  display: flex;
+  justify-content: space-between;
+ 
+  
+}
+
+.nav__links a{
+  margin: 1rem;
+  
+}
+.busqueda{
+  width: 40rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  border: 1px solid;
+}
+
+.header__boton{
+  border:  1px solid ;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #6834a6;
+  color: var(--blanco);
+}
+
+.container{
+  width: 120rem;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.listado-animes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 4rem;
+  
+}
+
+.anime{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 0.15);
+  border-radius: 2rem;
+  transition: all .3s;
+}
+  
+
+.anime:hover{
+transform: scale(1.1);
+}
+
+.anime h3{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.Links{
+  text-decoration: none;
+  background-color: #6834a6;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 1rem;
+  color: var(--blanco);
+  margin: 2rem;
+  text-align: center;
+  transition: all .3s;
+  
+}
+.Links:hover{
+  background-color: #5810af;
+}
+
+.footer {
+  background-color: var(--blanco);
+  padding: 5rem;
+}
+
+
+
+
+
+

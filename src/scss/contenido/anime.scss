@@ -1,0 +1,43 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.anime{
+   
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2rem;
+    
+
+    &__titulo{
+        padding: 2rem;
+
+    }
+
+   
+
+}
+
+.imagen{
+   width: 100%;
+   border-radius: 2rem
+}
+
+.links{
+    @include m.boton(red,white);
+    border-radius: unset;
+    
+    width: 100%;
+    
+    
+    
+   
+    
+
+    &:hover{
+        background-color: rgb(135, 15, 15);
+    }
+}
+

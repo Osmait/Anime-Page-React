@@ -1,0 +1,30 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.listado{
+    &__contenedo{
+        margin: 5rem;
+        
+        
+    
+        
+    }
+
+    &__titulo{
+        text-align: center;
+    }
+
+    &__animes{
+        
+        
+        @include m.tablet { 
+            @include m.grid(3,4rem);
+        }
+        
+    }
+}
+
+
+ 
+
+
