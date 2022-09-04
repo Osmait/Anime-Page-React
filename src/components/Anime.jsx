@@ -6,7 +6,7 @@ export const Anime = ({ anime }) => {
 
   
   return (
-    <div className="anime">
+    <div className="anime contenedor">
       <div className="anime__imagenes">
         <img className="imagen" src={image} alt={`imagen ${title}`} />
       </div>

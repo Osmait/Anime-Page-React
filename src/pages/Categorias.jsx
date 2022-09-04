@@ -1,17 +1,17 @@
-import { Error } from "../components/Error";
+
 import { ListadoPorCategoria } from "../components/ListadoPorCategoria";
 import useAnime from "../hooks/useAnime";
 
 export const Categorias = () => {
-  const { categorias, handleChanger} = useAnime();
+  const { categorias, handleChanger} = useAnime();  
   
 
   return (
     <>
        {
-      <form>
-        <label>Categorias</label>
-        <select onChange={handleChanger}>
+      <form className="formulario">
+        <label className="formulario__label">Categorias</label>
+        <select className="formulario__select" onChange={handleChanger}>
           
           { categorias.map((categoria) => {
             const { _id } = categoria;

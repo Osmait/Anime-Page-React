@@ -62,7 +62,7 @@ const AnimeProvider = ({children}) =>{
               const { data } = respuesta;
               
               setanimes(data);
-              setErrorP(false)
+              
             })
             .catch((err) =>{
               console.error(err)
@@ -104,7 +104,7 @@ const AnimeProvider = ({children}) =>{
         };
     
         consultarAPI();
-      }, [categorias]);
+      }, [categoria]);
 
 
  
@@ -149,6 +149,7 @@ const AnimeProvider = ({children}) =>{
 
   const handleChanger = e => {
     setCategoria(e.target.value)
+    
   }
 
   const handleBusqueda = e => {

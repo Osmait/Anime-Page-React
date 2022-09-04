@@ -5,7 +5,7 @@ import { Anime } from './Anime'
 export const ListadoPorCategoria = () => {
 
     const { AnimesPorCategoria }= useAnime()
-    console.log(AnimesPorCategoria)
+ 
 
   return (
     <main className="contenedor listado">
