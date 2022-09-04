@@ -18,7 +18,7 @@
         
         
         @include m.tablet { 
-            @include m.grid(3,4rem);
+            @include m.grid(4,4rem);
         }
         
     }

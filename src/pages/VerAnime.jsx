@@ -29,7 +29,7 @@ export const VerAnime = () => {
   const { title, synopsis, image, episodes, ranking, status } = anime;
 
   return (
-    <div>
+    <div className="contenedor ver-anime">
       <h2>{title}</h2>
       <img src={image} alt={title} />
       <p>
