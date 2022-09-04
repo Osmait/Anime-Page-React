@@ -10,7 +10,7 @@ const AnimeProvider = ({children}) =>{
     const [ categoria, setCategoria] = useState('Award Winning')
     const [AnimesPorCategoria, setAnimesPorCategoria] = useState([]);
     const [busqueda,setBusqueda] = useState('')
-    const [errorP, setErrorP]= useState(true)
+  
 
 // Consulta las categorias 
     useEffect(() => {
@@ -30,7 +30,7 @@ const AnimeProvider = ({children}) =>{
         const resultado =  await respuesta.json()
         
         setCategorias(resultado)
-        setErrorP(false)
+      
         } catch (error) {
           console.log(error)
           
@@ -93,11 +93,12 @@ const AnimeProvider = ({children}) =>{
               const { data } = respuesta;
               
               setAnimesPorCategoria(data);
-              setErrorP(false)
+              
+              
             })
             .catch((err) => {
               console.error(err)
-              setErrorP(true)
+              
             });
             
         };
@@ -129,9 +130,9 @@ const AnimeProvider = ({children}) =>{
         })
         .catch((err) => {
           console.error(err)
-          setErrorP(true)
+          
         });
-        setErrorP(false)
+        
     };
 
     consultarAPI();
@@ -166,7 +167,7 @@ const AnimeProvider = ({children}) =>{
                 AnimesPorCategoria,
                 busqueda,
                 handleBusqueda,
-                errorP
+               
                 
 
             }}

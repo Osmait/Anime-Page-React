@@ -3,12 +3,12 @@ import { ListadoPorCategoria } from "../components/ListadoPorCategoria";
 import useAnime from "../hooks/useAnime";
 
 export const Categorias = () => {
-  const { categorias, handleChanger, errorP } = useAnime();
+  const { categorias, handleChanger} = useAnime();
   
 
   return (
     <>
-       {!errorP ?
+       {
       <form>
         <label>Categorias</label>
         <select onChange={handleChanger}>
@@ -24,7 +24,7 @@ export const Categorias = () => {
         </select>
       </form>
 
-:<Error>Categorias no estan diponibles </Error>}
+}
       <ListadoPorCategoria/>
     </>
   );
